@@ -1,0 +1,178 @@
+/*======================================================================
+Theme Color All Codes Variable
+======================================================================*/
+
+:root {
+    --theme-general-color: #838383;
+    /* theme gray color */
+}
+
+:root {
+    --theme-primary-color: #2d10c0;
+    /* theme primary color */
+}
+
+:root {
+    --theme-secondary-color: #0b0430;
+    /* theme secondary color */
+}
+
+:root {
+    --theme-white-color: #fff;
+    /* theme white font color */
+}
+
+:root {
+    --theme-light-color: #edebff;
+    /* theme light gray color */
+}
+
+:root {
+    --theme-gray-color: #f8f8f8;
+    /* theme gray color */
+}
+
+:root {
+    --theme-text-gray: #c3c3c3;
+    /* theme text gray color */
+}
+
+:root {
+    --theme-dark-color: #090815;
+    /* theme dark color */
+}
+
+:root {
+    --theme-footer-color: #1e2124;
+    /* theme dark color */
+}
+
+:root {
+    --theme-primary-opacity-color: rgba(245, 133, 54, .8);
+    /* theme secondary color */
+}
+
+:root {
+    --theme-secondary-opacity-color: rgba(38, 43, 111, .7)
+    /* theme secondary opacity color */
+}
+
+:root {
+    --theme-dark-opacity-color: rgba(34, 36, 41, .7)
+    /* theme dark opacity color */
+}
+
+:root {
+    --theme-white-opacity-color: rgba(255, 255, 255, 0.5);
+    /* theme light color */
+}
+
+:root {
+    --text-light-color: #a5a5a5;
+    /* text light color */
+}
+
+:root {
+    --theme-extra1-color: #36B357;
+    /* theme extra1 color ok*/
+}
+
+:root {
+    --theme-extra2-color: #9262c5;
+    /* theme extra2 color ok*/
+}
+
+:root {
+    --theme-extra3-color: #e56f91;
+    /* theme extra3 color ok*/
+}
+
+:root {
+    --theme-extra4-color: #292d36;
+    /* theme extra4 color ok*/
+}
+
+
+/*======================================================================
+Font Variables
+======================================================================*/
+
+:root {
+    --theme-general-font: 'Roboto', sans-serif;
+    /* Font use for normal text and general text */
+}
+
+:root {
+    --theme-hiperlink-font: 'Advent Pro', sans-serif;
+    /* Font use for link text */
+}
+
+:root {
+    --theme-highlight-font: 'Advent Pro', sans-serif;
+    /* Font used in title or special area */
+}
+
+
+/*======================================================================
+Extra Styles Start
+======================================================================*/
+
+body {
+    font-size: 15px;
+}
+
+h1,
+.h1 {
+    font-size: 50px;
+    font-weight: 400
+}
+
+h2,
+.h2 {
+    font-size: 36px;
+    font-weight: 600
+}
+
+h3,
+.h3 {
+    font-size: 24px;
+    font-weight: 400
+}
+
+h4,
+.h4 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+h5,
+.h5 {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+h6,
+.h6 {
+    font-size: 16px;
+    font-weight: 400
+}
+
+.phone-number.h1 {
+    font-size: 40px;
+}
+
+.dropdown-item,
+.navbar-expand-lg .navbar-nav .nav-link {
+    font-family: var(--theme-general-font);
+}
+
+.btn {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.testimonial-style-4 .entry-content {
+    font-size: 24px;
+    line-height: 1.75;
+}

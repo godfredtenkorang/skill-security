@@ -1,0 +1,268 @@
+/*======================================================================
+Theme Color All Codes Variable
+======================================================================*/
+
+ :root {
+    --theme-general-color: #838383;
+    /* theme gray color */
+}
+
+ :root {
+    --theme-primary-color: #fd914f;
+    /* theme primary color */
+}
+
+ :root {
+    --theme-secondary-color: #222429;
+    /* theme secondary color */
+}
+
+ :root {
+    --theme-white-color: #fff;
+    /* theme white font color */
+}
+
+ :root {
+    --theme-light-color: #f6f7fa;
+    /* theme light gray color */
+}
+
+ :root {
+    --theme-gray-color: #dfdfdf;
+    /* theme gray color */
+}
+
+ :root {
+    --theme-text-gray: #c3c3c3;
+    /* theme text gray color */
+}
+
+ :root {
+    --theme-dark-color: #1c1e22;
+    /* theme dark color */
+}
+
+ :root {
+    --theme-footer-color: #1e2124;
+    /* theme dark color */
+}
+
+ :root {
+    --theme-primary-opacity-color: rgba(245, 133, 54, .8);
+    /* theme secondary color */
+}
+
+ :root {
+    --theme-secondary-opacity-color: rgba(38, 43, 111, .7)
+    /* theme secondary opacity color */
+}
+
+ :root {
+    --theme-dark-opacity-color: rgba(34, 36, 41, .7)
+    /* theme dark opacity color */
+}
+
+ :root {
+    --theme-white-opacity-color: rgba(255, 255, 255, 0.5);
+    /* theme light color */
+}
+
+ :root {
+    --text-light-color: #a5a5a5;
+    /* text light color */
+}
+
+ :root {
+    --theme-extra1-color: #36B357;
+    /* theme extra1 color ok*/
+}
+
+ :root {
+    --theme-extra2-color: #9262c5;
+    /* theme extra2 color ok*/
+}
+
+ :root {
+    --theme-extra3-color: #e56f91;
+    /* theme extra3 color ok*/
+}
+
+ :root {
+    --theme-extra4-color: #292d36;
+    /* theme extra4 color ok*/
+}
+
+
+/*======================================================================
+Font Variables
+======================================================================*/
+
+ :root {
+    --theme-general-font: 'Quicksand', sans-serif;
+    /* Font use for normal text and general text */
+}
+
+ :root {
+    --theme-hiperlink-font: 'Khand', sans-serif;
+    /* Font use for link text */
+}
+
+ :root {
+    --theme-highlight-font: 'Khand', sans-serif;
+}
+
+
+/* Font used in title or special area */
+
+
+/*======================================================================
+Extra Styles Start
+======================================================================*/
+
+body {
+    font-weight: 500;
+    font-size: 15px;
+}
+
+h1,
+.h1 {
+    font-size: 42px;
+    font-weight: 700
+}
+
+h2,
+.h2 {
+    font-size: 36px;
+    font-weight: 600
+}
+
+h3,
+.h3 {
+    font-size: 30px;
+    font-weight: 600
+}
+
+h4,
+.h4 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+h5,
+.h5 {
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+h6,
+.h6 {
+    font-size: 18px;
+    font-weight: 600
+}
+
+.btn {
+    font-size: 16px;
+    padding: 0 35px;
+    text-transform: uppercase;
+    font-weight: 500
+}
+
+.btn-primary,
+.btn-primary-filter,
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+    color: var(--theme-dark-color);
+}
+
+.tagline {
+    letter-spacing: 1px;
+    font-size: 19px;
+    font-family: var(--theme-highlight-font);
+    font-weight: 400;
+}
+
+.list-style-tick.tick-round-primary li::before {
+    content: "\f058";
+}
+
+.fact-counter .count-num {
+    font-size: 72px;
+    font-weight: 300;
+}
+
+[class*="-form-style-1"] input {
+    padding: 10px 15px 10px 20px;
+    height: 50px;
+    border-radius: 0;
+}
+
+[class*="-form-style-1"] button {
+    padding: 0 30px;
+    border-radius: 0;
+}
+
+.dropdown-item,
+.navbar-expand-lg .navbar-nav .nav-link {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.footer-logo img {
+    width: 100px;
+}
+
+.accordion-item {
+    background-color: transparent;
+    border: none;
+}
+
+#accordion-1 .accordion-item .accordion-button::after {
+    background-image: none;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f078";
+    color: var(--theme-white-color);
+}
+
+#accordion-1 .accordion-item .accordion-button:not(.collapsed)::after {
+    color: var(--theme-dark-color);
+}
+
+#accordion-1 .accordion-item .accordion-button {
+    color: var(--theme-white-color) !important;
+    background-color: var(--theme-dark-color) !important;
+}
+
+#accordion-1 .accordion-item .accordion-button:not(.collapsed) {
+    color: var(--theme-dark-color) !important;
+    background-color: var(--theme-primary-color) !important;
+}
+
+.mix-tab ul li,
+.tab-simple ul li {
+    font-weight: 300;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 24px;
+    font-family: var(--theme-highlight-font);
+    text-transform: uppercase;
+}
+
+.footer-widget .widget-title {
+    font-size: 26px;
+}
+
+[class*="widget-link"]>ul>li>a {
+    color: var(--theme-white-color);
+}
+
+[class*="widget-post-"] .post-item .content .title a {
+    color: var(--theme-white-color);
+}
+
+.widget-post-2 .post-item .content .title {
+    font-size: 18px;
+}
