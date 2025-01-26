@@ -1,0 +1,443 @@
+{% extends 'security/base.html' %}
+{% load static %}
+{% block content %}
+<!--============================== Page Banner 1 Section Start ==============================-->
+<div id="page-banner" class="page-title bg-light title-text-dark title-large"style="background-image: url('{% static 'security/images/background/17.png' %}'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="d-flex flex-column gap-3" style="padding:70px 0">
+                    <div class="title-wrap">
+                        <h1 class="page-title mb-0">News</h1>
+                    </div>
+                    <nav>
+                        <ol class="breadcrumb mb-0 greater-than">
+                            <li class="breadcrumb-item"><a href="index.html"
+                                    class="text-secondary hover-text-primary">Home</a></li>
+                            <li class="breadcrumb-item"><span style="color:#6c757d;" class="last">News</span>
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--============================== Page Banner 1 Section End ==============================-->
+
+<!--============================== News Section Start ==============================-->
+<div class="full-row">
+    <div class="container">
+        <div class="row gy-5">
+            <!--============================== Sidebar start ==============================-->
+            <div id="secondary" class="widget-area col-lg-4 order-lg-2">
+                <div id="sidebar" class="sidebar sidebar-blog bg-light p-30">
+                    <div class="sidebar-inner">
+                        <div id="categories-1" class="widget border-0 widget_categories">
+                            <h4 class="widget-title down-line-primary">Categories</h4>
+                            <ul>
+                                <li class="cat-item cat-item-16"><a href="#">Security Service</a> (10)</li>
+                                <li class="cat-item cat-item-17"><a href="#">Defense Training</a> (06)</li>
+                                <li class="cat-item cat-item-18"><a href="#">VIP Security</a> (07)</li>
+                                <li class="cat-item cat-item-18"><a href="#">Private Security</a> (11)</li>
+                                <li class="cat-item cat-item-18"><a href="#">CCTV Systems Network</a> (05)</li>
+                                <li class="cat-item cat-item-18"><a href="#">Reports</a> (12)</li>
+                            </ul>
+                        </div>
+                        <div id="archives-1" class="widget border-0 widget_archive">
+                            <h4 class="widget-title down-line-primary">Archive</h4>
+                            <ul>
+                                <li><a href="#">November 2021</a></li>
+                                <li><a href="#">August 2021</a></li>
+                                <li><a href="#">June 2021</a></li>
+                                <li><a href="#">May 2021</a></li>
+                                <li><a href="#">March 2021</a></li>
+                            </ul>
+                        </div>
+                        <div id="recent-posts-1" class="widget border-0 widget_recent_entries">
+                            <h4 class="widget-title down-line-primary">Recent Post</h4>
+                            <ul>
+                                <li>
+                                    <a href="#">Habitasse felis magna velit posuere ridiculus curabitur</a>
+                                    <span class="post-date">May 12, 2021</span>
+                                </li>
+                                <li>
+                                    <a href="#">Elit auctor primis ac ullamcorper libero. Felis erat auctor</a>
+                                    <span class="post-date">August 28, 2021</span>
+                                </li>
+                                <li>
+                                    <a href="#">Tempus interdum justo aliquet id vulputate fringilla</a>
+                                    <span class="post-date">March 19, 2021</span>
+                                </li>
+                                <li>
+                                    <a href="#">Porttitor primis vel libero consectetuer eleifend feugiat</a>
+                                    <span class="post-date">February 09, 2021</span>
+                                </li>
+                                <li>
+                                    <a href="#">Conubia habitant vivamus nonummy per curabitur laoreet</a>
+                                    <span class="post-date">November 17, 2021</span>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div id="tags-1" class="widget border-0 widget_tag_cloud">
+                            <h4 class="widget-title down-line-primary">Product Tag</h4>
+                            <div class="tagcloud">
+                                <ul>
+                                    <li><a href="#">general</a></li>
+                                    <li><a href="#">videos</a></li>
+                                    <li><a href="#">media</a></li>
+                                    <li><a href="#">web</a></li>
+                                    <li><a href="#">parallax</a></li>
+                                    <li><a href="#">ecommerce</a></li>
+                                    <li><a href="#">t-shirt</a></li>
+                                    <li><a href="#">women</a></li>
+                                    <li><a href="#">trade</a></li>
+                                    <li><a href="#">animation</a></li>
+                                    <li><a href="#">theme</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-8 order-lg-1">
+                <div class="row row-cols-md-2 row-cols-1 g-4 blog-style-1 entry-meta-divider-line transition-all">
+                    {% for blog in blogs %}
+                    <div class="col">
+                        <article class="entry-wrapper">
+                            <div class="entry-thumbnail-wrapper">
+                                <div class="post-thumbnail overflow-hidden overlay-secondary">
+                                    <a href="#"><img src="{{ blog.image.url }}" alt="Image not found !"></a>
+                                    <div class="position-absolute xy-center overflow-hidden">
+                                        <a class="text-white first-push-up font-large"
+                                            href="{% url 'blog-detail' blog.id %}">+</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry-content-wrapper pt-3">
+                                <div class="entry-header">
+                                    <div class="entry-meta text-uppercase fs-13">
+                                        <span class="author-link"><a href="#" class="text-light hover-text-primary">{{ blog.author }}</a></span>
+                                        <span class="posted-date"><a href="#" class="text-light hover-text-primary">{{ blog.date_added }}</a></span>
+                                    </div>
+                                    <h5 class="entry-title mb-3 ordinary-font fw-500"><a
+                                            href="{% url 'blog-detail' blog.id %}"
+                                            class="text-dark hover-text-primary">{{ blog.title }}</a></h5>
+                                </div>
+                                <div class="entry-content">
+                                    <p>{{ blog.subtitle }}</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    {% endfor %}
+                    <div class="col">
+                        <article class="entry-wrapper">
+                            <div class="entry-thumbnail-wrapper">
+                                <div class="post-thumbnail overflow-hidden overlay-secondary">
+                                    <a href="#"><img src="{% static 'security/images/thumb/17.png' %}" alt="Image not found !"></a>
+                                    <div class="position-absolute xy-center overflow-hidden">
+                                        <a class="text-white first-push-up font-large"
+                                            href="news-details-left-sidebar.html">+</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry-content-wrapper pt-3">
+                                <div class="entry-header">
+                                    <div class="entry-meta text-uppercase fs-13">
+                                        <span class="author-link"><a href="#" class="text-light hover-text-primary">By
+                                                Robert Haven</a></span>
+                                        <span class="posted-date"><a href="#" class="text-light hover-text-primary">Dec
+                                                25, 2019</a></span>
+                                    </div>
+                                    <h5 class="entry-title mb-3 ordinary-font fw-500"><a
+                                            href="news-details-left-sidebar.html"
+                                            class="text-dark hover-text-primary">Don't worry your data is
+                                            safe</a></h5>
+                                </div>
+                                <div class="entry-content">
+                                    <p>Molestie tincidunt enim. Cras odio cubilia sociis at consequat metus
+                                        conubia lectus porta commodo malesuada ante conubia.</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="entry-wrapper">
+                            <div class="entry-thumbnail-wrapper">
+                                <div class="post-thumbnail overflow-hidden overlay-secondary">
+                                    <a href="#"><img src="{% static 'security/images/thumb/18.png' %}" alt="Image not found !"></a>
+                                    <div class="position-absolute xy-center overflow-hidden">
+                                        <a class="text-white first-push-up font-large"
+                                            href="news-details-left-sidebar.html">+</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry-content-wrapper pt-3">
+                                <div class="entry-header">
+                                    <div class="entry-meta text-uppercase fs-13">
+                                        <span class="author-link"><a href="#" class="text-light hover-text-primary">By
+                                                Robert Haven</a></span>
+                                        <span class="posted-date"><a href="#" class="text-light hover-text-primary">Dec
+                                                25, 2019</a></span>
+                                    </div>
+                                    <h5 class="entry-title mb-3 ordinary-font fw-500"><a
+                                            href="news-details-left-sidebar.html"
+                                            class="text-dark hover-text-primary">How to develop your home
+                                            security</a></h5>
+                                </div>
+                                <div class="entry-content">
+                                    <p>Molestie tincidunt enim. Cras odio cubilia sociis at consequat metus
+                                        conubia lectus porta commodo malesuada ante conubia.</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="entry-wrapper">
+                            <div class="entry-thumbnail-wrapper">
+                                <div class="post-thumbnail overflow-hidden overlay-secondary">
+                                    <a href="#"><img src="{% static 'security/images/thumb/19.png' %}" alt="Image not found !"></a>
+                                    <div class="position-absolute xy-center overflow-hidden">
+                                        <a class="text-white first-push-up font-large"
+                                            href="news-details-left-sidebar.html">+</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry-content-wrapper pt-3">
+                                <div class="entry-header">
+                                    <div class="entry-meta text-uppercase fs-13">
+                                        <span class="author-link"><a href="#" class="text-light hover-text-primary">By
+                                                Robert Haven</a></span>
+                                        <span class="posted-date"><a href="#" class="text-light hover-text-primary">Dec
+                                                25, 2019</a></span>
+                                    </div>
+                                    <h5 class="entry-title mb-3 ordinary-font fw-500"><a
+                                            href="news-details-left-sidebar.html"
+                                            class="text-dark hover-text-primary">CCTV camera security control
+                                            box</a></h5>
+                                </div>
+                                <div class="entry-content">
+                                    <p>Molestie tincidunt enim. Cras odio cubilia sociis at consequat metus
+                                        conubia lectus porta commodo malesuada ante conubia.</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="entry-wrapper">
+                            <div class="entry-thumbnail-wrapper">
+                                <div class="post-thumbnail overflow-hidden overlay-secondary">
+                                    <a href="#"><img src="{% static 'security/images/thumb/20.png' %}" alt="Image not found !"></a>
+                                    <div class="position-absolute xy-center overflow-hidden">
+                                        <a class="text-white first-push-up font-large"
+                                            href="news-details-left-sidebar.html">+</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry-content-wrapper pt-3">
+                                <div class="entry-header">
+                                    <div class="entry-meta text-uppercase fs-13">
+                                        <span class="author-link"><a href="#" class="text-light hover-text-primary">By
+                                                Robert Haven</a></span>
+                                        <span class="posted-date"><a href="#" class="text-light hover-text-primary">Dec
+                                                25, 2019</a></span>
+                                    </div>
+                                    <h5 class="entry-title mb-3 ordinary-font fw-500"><a
+                                            href="news-details-left-sidebar.html"
+                                            class="text-dark hover-text-primary">Our best pc security system</a>
+                                    </h5>
+                                </div>
+                                <div class="entry-content">
+                                    <p>Molestie tincidunt enim. Cras odio cubilia sociis at consequat metus
+                                        conubia lectus porta commodo malesuada ante conubia.</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="entry-wrapper">
+                            <div class="entry-thumbnail-wrapper">
+                                <div class="post-thumbnail overflow-hidden overlay-secondary">
+                                    <a href="#"><img src="{% static 'security/images/thumb/21.png' %}" alt="Image not found !"></a>
+                                    <div class="position-absolute xy-center overflow-hidden">
+                                        <a class="text-white first-push-up font-large"
+                                            href="news-details-left-sidebar.html">+</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry-content-wrapper pt-3">
+                                <div class="entry-header">
+                                    <div class="entry-meta text-uppercase fs-13">
+                                        <span class="author-link"><a href="#" class="text-light hover-text-primary">By
+                                                Robert Haven</a></span>
+                                        <span class="posted-date"><a href="#" class="text-light hover-text-primary">Dec
+                                                25, 2019</a></span>
+                                    </div>
+                                    <h5 class="entry-title mb-3 ordinary-font fw-500"><a
+                                            href="news-details-left-sidebar.html"
+                                            class="text-dark hover-text-primary">Configure your security cam</a>
+                                    </h5>
+                                </div>
+                                <div class="entry-content">
+                                    <p>Molestie tincidunt enim. Cras odio cubilia sociis at consequat metus
+                                        conubia lectus porta commodo malesuada ante conubia.</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="entry-wrapper">
+                            <div class="entry-thumbnail-wrapper">
+                                <div class="post-thumbnail overflow-hidden overlay-secondary">
+                                    <a href="#"><img src="{% static 'security/images/thumb/22.png' %}" alt="Image not found !"></a>
+                                    <div class="position-absolute xy-center overflow-hidden">
+                                        <a class="text-white first-push-up font-large"
+                                            href="news-details-left-sidebar.html">+</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry-content-wrapper pt-3">
+                                <div class="entry-header">
+                                    <div class="entry-meta text-uppercase fs-13">
+                                        <span class="author-link"><a href="#" class="text-light hover-text-primary">By
+                                                Robert Haven</a></span>
+                                        <span class="posted-date"><a href="#" class="text-light hover-text-primary">Dec
+                                                25, 2019</a></span>
+                                    </div>
+                                    <h5 class="entry-title mb-3 ordinary-font fw-500"><a
+                                            href="news-details-left-sidebar.html"
+                                            class="text-dark hover-text-primary">Bodyguard duties &
+                                            activities</a></h5>
+                                </div>
+                                <div class="entry-content">
+                                    <p>Molestie tincidunt enim. Cras odio cubilia sociis at consequat metus
+                                        conubia lectus porta commodo malesuada ante conubia.</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="entry-wrapper">
+                            <div class="entry-thumbnail-wrapper">
+                                <div class="post-thumbnail overflow-hidden overlay-secondary">
+                                    <a href="#"><img src="{% static 'security/images/thumb/23.png' %}" alt="Image not found !"></a>
+                                    <div class="position-absolute xy-center overflow-hidden">
+                                        <a class="text-white first-push-up font-large"
+                                            href="news-details-left-sidebar.html">+</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry-content-wrapper pt-3">
+                                <div class="entry-header">
+                                    <div class="entry-meta text-uppercase fs-13">
+                                        <span class="author-link"><a href="#" class="text-light hover-text-primary">By
+                                                Robert Haven</a></span>
+                                        <span class="posted-date"><a href="#" class="text-light hover-text-primary">Dec
+                                                25, 2019</a></span>
+                                    </div>
+                                    <h5 class="entry-title mb-3 ordinary-font fw-500"><a
+                                            href="news-details-left-sidebar.html"
+                                            class="text-dark hover-text-primary">Security system Of any
+                                            building</a></h5>
+                                </div>
+                                <div class="entry-content">
+                                    <p>Molestie tincidunt enim. Cras odio cubilia sociis at consequat metus
+                                        conubia lectus porta commodo malesuada ante conubia.</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="entry-wrapper">
+                            <div class="entry-thumbnail-wrapper">
+                                <div class="post-thumbnail overflow-hidden overlay-secondary">
+                                    <a href="#"><img src="{% static 'security/images/thumb/24.png' %}" alt="Image not found !"></a>
+                                    <div class="position-absolute xy-center overflow-hidden">
+                                        <a class="text-white first-push-up font-large"
+                                            href="news-details-left-sidebar.html">+</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry-content-wrapper pt-3">
+                                <div class="entry-header">
+                                    <div class="entry-meta text-uppercase fs-13">
+                                        <span class="author-link"><a href="#" class="text-light hover-text-primary">By
+                                                Robert Haven</a></span>
+                                        <span class="posted-date"><a href="#" class="text-light hover-text-primary">Dec
+                                                25, 2019</a></span>
+                                    </div>
+                                    <h5 class="entry-title mb-3 ordinary-font fw-500"><a
+                                            href="news-details-left-sidebar.html"
+                                            class="text-dark hover-text-primary">Don't worry your data is
+                                            safe</a></h5>
+                                </div>
+                                <div class="entry-content">
+                                    <p>Molestie tincidunt enim. Cras odio cubilia sociis at consequat metus
+                                        conubia lectus porta commodo malesuada ante conubia.</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col">
+                        <article class="entry-wrapper">
+                            <div class="entry-thumbnail-wrapper">
+                                <div class="post-thumbnail overflow-hidden overlay-secondary">
+                                    <a href="#"><img src="{% static 'security/images/thumb/12.png' %}" alt="Image not found !"></a>
+                                    <div class="position-absolute xy-center overflow-hidden">
+                                        <a class="text-white first-push-up font-large"
+                                            href="news-details-left-sidebar.html">+</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="entry-content-wrapper pt-3">
+                                <div class="entry-header">
+                                    <div class="entry-meta text-uppercase fs-13">
+                                        <span class="author-link"><a href="#" class="text-light hover-text-primary">By
+                                                Robert Haven</a></span>
+                                        <span class="posted-date"><a href="#" class="text-light hover-text-primary">Dec
+                                                25, 2019</a></span>
+                                    </div>
+                                    <h5 class="entry-title mb-3 ordinary-font fw-500"><a
+                                            href="news-details-left-sidebar.html"
+                                            class="text-dark hover-text-primary">How to develop your home
+                                            security</a></h5>
+                                </div>
+                                <div class="entry-content">
+                                    <p>Molestie tincidunt enim. Cras odio cubilia sociis at consequat metus
+                                        conubia lectus porta commodo malesuada ante conubia.</p>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="row justify-content-start mt-5">
+                    <div class="col-auto">
+                        <div class="navigation-1">
+                            <nav aria-label="...">
+                                <ul class="pagination">
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="#" tabindex="-1">Previous</a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item active" aria-current="page">
+                                        <a class="page-link" href="#">2</a>
+                                    </li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="#">Next</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--============================== Sidebar start ==============================-->
+        </div>
+    </div>
+</div>
+<!--============================== News Section End ==============================-->
+
+{% endblock %}

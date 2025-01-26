@@ -1,0 +1,460 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from template.unicoderbd.com/patron/index-security.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 May 2024 09:59:26 GMT -->
+
+<head>
+
+    <!-- Meta Tag -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Patron - Multipurpose Corporate & Security Service Template">
+    <meta name="author" content="root">
+
+    <title>Still Force Consults</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{% static 'security/images/Logo.jpg' %}">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap"
+        rel="stylesheet">
+
+    <!--  CSS Style -->
+    <link rel="stylesheet" href="{% static 'security/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'security/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'security/webfonts/flaticon/flaticon.css' %}">
+    <link rel="stylesheet" href="{% static 'security/css/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'security/css/jquery.fancybox.min.css' %}">
+    <link rel="stylesheet" href="{% static 'security/css/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'security/css/revolution/settings.css' %}">
+    <link rel="stylesheet" href="{% static 'security/css/template.css' %}">
+    <link rel="stylesheet" href="{% static 'security/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'security/css/category/default.css' %}">
+</head>
+
+<body>
+    <div id="page-wrapper">
+
+        <!--============================== Header Section Start ==============================-->
+        <header id="header" class="nav-on-banner">
+            <div class="main-nav py-3 d-none d-lg-block">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <nav
+                                class="navbar navbar-expand-lg navbar-light text-uppercase nav-white nav-primary-hover nav-primary-active fw-400">
+                                <a class="navbar-brand" href="{% url 'index' %}"><img class="nav-logo"
+                                        src="{% static 'security/images/Logo.jpg' %}" alt="still force consults"
+                                        width="10px" height="50px"></a>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#main-navbar-content" aria-controls="main-navbar-content"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="main-navbar-content">
+                                    <ul class="navbar-nav justify-content-end">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="{% url 'index' %}">Home</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="">About</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="{% url 'about' %}">About</a></li>
+                                                <li><a class="dropdown-item" href="{% url 'clienteles' %}">Clientele</a></li>
+
+                                            </ul>
+                                        </li>
+
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="#">Services</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="{% url 'service' %}">Service</a></li>
+                                                <li><a class="dropdown-item" href="{% url 'quote' %}">Quote</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="{% url 'shop' %}">Shop</a>
+
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="{% url 'blog' %}">News</a>
+
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+                                        </li>
+                                    </ul>
+                                    <div class="navbar-nav nav-element ms-4">
+                                        <div class="navbar-nav search-pop position-relative">
+                                            <i class="toggle-icon fas fa-search text-white"></i>
+                                            <div class="search-form shadow-sm bg-white">
+                                                <form action="#" method="post" class="position-relative">
+                                                    <input class="form-control" type="search" placeholder="Search"
+                                                        aria-label="Search">
+                                                    <button class="btn-search my-2 my-sm-0" type="submit"><i
+                                                            class="fas fa-search"></i></button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-sticky bg-secondary py-2">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col">
+                            <nav
+                                class="navbar navbar-expand-lg navbar-light text-uppercase nav-white nav-primary-hover nav-primary-active">
+                                <a class="navbar-brand" href="{% url 'index' %}"><img class="nav-logo"
+                                        src="{% static 'security/images/Logo.jpg' %}" alt="Patron" width="10"
+                                        height="50"></a>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#sticky-navbar-content" aria-controls="sticky-navbar-content"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="main-navbar-content">
+                                    <ul class="navbar-nav justify-content-end">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="{% url 'index' %}">Home</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="">About</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="{% url 'about' %}">About</a></li>
+                                                <li><a class="dropdown-item" href="{% url 'clienteles' %}">Clientele</a></li>
+
+                                            </ul>
+                                        </li>
+
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="">Services</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="{% url 'service' %}">Service</a></li>
+                                                <li><a class="dropdown-item" href="{% url 'quote' %}">Quote</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="{% url 'shop' %}">Shop</a>
+
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" href="{% url 'blog' %}">News</a>
+
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+                                        </li>
+                                    </ul>
+                                    <div class="navbar-nav nav-element ms-4">
+                                        <div class="navbar-nav search-pop position-relative">
+                                            <i class="toggle-icon fas fa-search text-white"></i>
+                                            <div class="search-form shadow-sm bg-white">
+                                                <form action="#" method="post" class="position-relative">
+                                                    <input class="form-control" type="search" placeholder="Search"
+                                                        aria-label="Search">
+                                                    <button class="btn-search my-2 my-sm-0" type="submit"><i
+                                                            class="fas fa-search"></i></button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header-mobile py-10 bg-default d-lg-none">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-12 col-xl-12">
+                            <div class="h-100 md-py-10">
+                                <div class="nav-leftpush-overlay">
+                                    <nav
+                                        class="navbar navbar-expand-lg navbar-light justify-content-between nav-dark nav-primary-hover">
+                                        <a class="navbar-brand" href="{% url 'index' %}" rel="home">
+                                            <img class="mobile-logo" src="{% static 'security/images/Logo.jpg' %}"
+                                                alt="Patron">
+                                        </a> <button type="button" class="push-nav-toggle d-lg-none bg-white rounded-0">
+                                            <span class="navbar-toggler-icon"></span>
+                                        </button>
+                                        <div class="navbar-slide-push transation-this">
+                                            <div
+                                                class="login-signup bg-dark d-flex justify-content-between py-10 px-20 align-items-center">
+                                                <span class="slide-nav-close"><i
+                                                        class="flaticon-cancel flat-mini text-white"></i></span>
+                                            </div>
+                                            <div class="menu-and-category px-4">
+                                                <div class="menu-primary-menu-container">
+                                                    <ul class="navbar-nav justify-content-end">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="{% url 'index' %}">Home</a>
+                                                        </li>
+                                                        <li class="nav-item dropdown">
+                                                            <a class="nav-link dropdown-toggle"
+                                                                href="">About</a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item" href="{% url 'about' %}">About</a>
+                                                                </li>
+                                                                <li><a class="dropdown-item"
+                                                                        href="{% url 'clienteles' %}">Clientele</a></li>
+
+                                                            </ul>
+                                                        </li>
+
+                                                        <li class="nav-item dropdown">
+                                                            <a class="nav-link dropdown-toggle" href="">Services</a>
+                                                            <ul class="dropdown-menu">
+                                                                <li><a class="dropdown-item"
+                                                                        href="{% url 'service' %}">Service</a></li>
+                                                                <li><a class="dropdown-item" href="{% url 'quote' %}">Quote</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                        <li class="nav-item dropdown">
+                                                            <a class="nav-link dropdown-toggle"
+                                                                href="{% url 'shop' %}">Shop</a>
+
+                                                        </li>
+                                                        <li class="nav-item dropdown">
+                                                            <a class="nav-link dropdown-toggle"
+                                                                href="{% url 'blog' %}">News</a>
+
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="navbar-nav nav-element ms-4">
+                                                        <div class="navbar-nav search-pop position-relative">
+                                                            <i class="toggle-icon fas fa-search text-white"></i>
+                                                            <div class="search-form shadow-sm bg-white">
+                                                                <form action="#" method="post"
+                                                                    class="position-relative">
+                                                                    <input class="form-control" type="search"
+                                                                        placeholder="Search" aria-label="Search">
+                                                                    <button class="btn-search my-2 my-sm-0"
+                                                                        type="submit"><i
+                                                                            class="fas fa-search"></i></button>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+
+                                                        </ul>
+                                                    </div>
+                                                </div>
+
+        </header>
+        <!--============================== Header Section End ==============================-->
+{% block content %}{% endblock %}
+<!--============================== Footer 1 Section Start ==============================-->
+<footer class="full-row bg-footer text-light">
+    <div class="container">
+        <div class="row row-cols-lg-3 row-cols-1 gy-5 xxs-link-single">
+            <div class="col">
+                <div class="footer-widget">
+                    <div class="footer-logo mb-4">
+                        <a href="#"><img src="{% static 'security/images/Logo.jpg' %}" alt="still force consults"
+                                width="20" height="50"></a>
+                    </div>
+                    <p>We See Beyound</p>
+                </div>
+                <div class="footer-widget">
+                    <div class="transparent-social-media-1 list-color-light hover-list-color-primary hyperlink-mr-20">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-google-plus"></i></a>
+                        <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="footer-widget widget-link-double">
+                    <h4 class="widget-title text-white mb-4">Page Links</h4>
+                    <ul>
+                        <li><a href="{% url 'about' %}"><span class="text">About Company</span></a></li>
+
+                        <li><a href="terms-and-condition.html"><span class="text">Terms and Conditions</span></a>
+                        </li>
+                        <li><a href="{% url 'service' %}"><span class="text">Services</span></a></li>
+                        <li><a href="{% url 'shop' %}"><span class="text">Shop</span></a></li>
+                        <li><a href="{% url 'blog' %}"><span class="text">Blog</span></a></li>
+                        <li><a href="{% url 'contact' %}"><span class="text">Contact Us</span></a></li>
+                        <li><a href="{% url 'clienteles' %}"><span class="text">Clientele</span></a></li>
+
+                        <li><a href="{% url 'quote' %}"><span class="text">Quote</span></a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col">
+                <div class="footer-widget widget-newsletter">
+                    <h4 class="widget-title text-white mb-4">Newslatter</h4>
+                    <p>Subscribe to our news and get most important industry news</p>
+                    <div class="outline-form-style-1 newsletter-number mt-30">
+                        <form class="form-outline square-shape" action="#" method="post">
+                            <input type="text" class="form-control input-field bg-light" name="search"
+                                placeholder="Email Address">
+                            <button type="submit" name="submit" class="submit bg-primary">Subscribes</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!--============================== Footer 1 Section End ==============================-->
+
+<!--============================== Footer Bottom 1 Section Start ==============================-->
+<div class="full-row bg-dark fs-13 py-4">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="d-flex flex-wrap justify-content-between align-items-center">
+
+                    <span class="copyright-text text-white">© 2025 All Rights Reserved by <a
+                            href="ddtstechsolutions.com">Ddt's Tech Solutions</a></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--============================== Footer Bottom 1 Section End ==============================-->
+
+<!-- Scroll to top -->
+<a href="#" class="bg-primary text-white" id="scroll"><i class="fa fa-angle-up"></i></a>
+<!-- End Scroll To top -->
+
+</div>
+
+<!-- Javascripts -->
+<script src="{% static 'security/js/jquery.min.js' %}"></script>
+<script src="{% static 'security/js/revolution/jquery.themepunch.tools.min.js' %}"></script>
+<script src="{% static 'security/js/revolution/jquery.themepunch.revolution.min.js' %}"></script>
+<!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+<script src="{% static 'security/js/extensions/revolution.extension.actions.min.js' %}"></script>
+<script src="{% static 'security/js/extensions/revolution.extension.carousel.min.js' %}"></script>
+<script src="{% static 'security/js/extensions/revolution.extension.kenburn.min.js' %}"></script>
+<script src="{% static 'security/js/extensions/revolution.extension.layeranimation.min.js' %}"></script>
+<script src="{% static 'security/js/extensions/revolution.extension.migration.min.js' %}"></script>
+<script src="{% static 'security/js/extensions/revolution.extension.navigation.min.js' %}"></script>
+<script src="{% static 'security/js/extensions/revolution.extension.parallax.min.js' %}"></script>
+<script src="{% static 'security/js/extensions/revolution.extension.slideanims.min.js' %}"></script>
+<script src="{% static 'security/js/extensions/revolution.extension.video.min.js' %}"></script>
+<script src="{% static 'security/js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'security/js/jquery.fancybox.min.js' %}"></script>
+<script src="{% static 'security/js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'security/js/wow.min.js' %}"></script>
+<script src="{% static 'security/js/mixitup.min.js' %}"></script>
+<script src="{% static 'security/js/paraxify.min.js' %}"></script>
+<script src="{% static 'security/js/custom.js' %}"></script>
+<script>
+    var tpj = jQuery;
+    var revapi151;
+    tpj(document).ready(function () {
+        if (tpj("#rev_slider_151_1").revolution == undefined) {
+            revslider_showDoubleJqueryError("#rev_slider_151_1");
+        } else {
+            revapi151 = tpj("#rev_slider_151_1").show().revolution({
+                sliderType: "standard",
+                jsFileLocation: "assets/js/revolution",
+                sliderLayout: "fullswidth",
+                dottedOverlay: "none",
+                delay: 9000,
+                navigation: {
+                    keyboardNavigation: "off",
+                    keyboard_direction: "vertical",
+                    mouseScrollNavigation: "off",
+                    mouseScrollReverse: "default",
+                    onHoverStop: "off",
+                    touch: {
+                        touchenabled: "on",
+                        swipe_threshold: 75,
+                        swipe_min_touches: 1,
+                        swipe_direction: "horizontal",
+                        drag_block_vertical: false
+                    },
+                    arrows: {
+                        style: "uranus",
+                        enable: true,
+                        hide_onmobile: false,
+                        hide_over: 479,
+                        hide_onleave: false,
+                        tmp: '',
+                        left: {
+                            h_align: "left",
+                            v_align: "center",
+                            h_offset: 0,
+                            v_offset: 0
+                        },
+                        right: {
+                            h_align: "right",
+                            v_align: "center",
+                            h_offset: 0,
+                            v_offset: 0
+                        }
+                    }
+                },
+                responsiveLevels: [1240, 1024, 778, 480],
+                visibilityLevels: [1240, 1024, 778, 480],
+                gridwidth: [1240, 1024, 778, 480],
+                gridheight: [840, 700, 960, 720],
+                lazyType: "none",
+                scrolleffect: {
+                    blur: "on",
+                    maxblur: "20",
+                    on_slidebg: "on",
+                    direction: "top",
+                    multiplicator: "2",
+                    multiplicator_layers: "2",
+                    tilt: "10",
+                    disable_on_mobile: "off",
+                },
+                parallax: {
+                    type: "scroll",
+                    origo: "slidercenter",
+                    speed: 400,
+                    levels: [5, 10, 15, 20, 25, 30, 35, 40, 45, 46, 47, 48, 49, 50, 51, 55],
+                },
+                shadow: 0,
+                spinner: "spinner3",
+                stopLoop: "off",
+                stopAfterLoops: -1,
+                stopAtSlide: -1,
+                shuffle: "off",
+                autoHeight: "off",
+                fullScreenAutoWidth: "off",
+                fullScreenAlignForce: "off",
+                fullScreenOffsetContainer: "",
+                fullScreenOffset: "60px",
+                hideThumbsOnMobile: "off",
+                hideSliderAtLimit: 0,
+                hideCaptionAtLimit: 0,
+                hideAllCaptionAtLilmit: 0,
+                debugMode: false,
+                fallbacks: {
+                    simplifyAll: "off",
+                    nextSlideOnWindowFocus: "off",
+                    disableFocusListener: false,
+                }
+            });
+        }
+    });
+</script>
+</body>
+
+
+<!-- Mirrored from template.unicoderbd.com/patron/index-security.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 May 2024 09:59:34 GMT -->
+
+</html>

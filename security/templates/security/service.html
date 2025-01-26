@@ -1,0 +1,343 @@
+{% extends 'security/base.html' %}
+{% load static %}
+{% block content %}
+
+<!--============================== Page Banner 1 Section Start ==============================-->
+<div id="page-banner" class="page-title bg-light title-text-dark title-large"style="background-image: url('{% static 'security/images/background/17.png' %}'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="d-flex flex-column gap-3" style="padding:70px 0">
+                    <div class="title-wrap">
+                        <h1 class="page-title mb-0">Service</h1>
+                    </div>
+                    <nav>
+                        <ol class="breadcrumb mb-0 greater-than">
+                            <li class="breadcrumb-item"><a href="{% url 'index' %}"
+                                    class="text-secondary hover-text-primary">Home</a></li>
+                            <li class="breadcrumb-item"><span style="color:#6c757d;" class="last">Service</span>
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--============================== Page Banner 1 Section End ==============================-->
+
+<!--============================== Icon List Thumb 1 Sction Start ==============================-->
+<div class="full-row">
+    <div class="container">
+        <div class="row row-cols-xl-3 row-cols-md-2 row-cols-1 g-4">
+            <div class="col">
+                <div
+                    class="entry-wrapper d-flex flex-row align-items-start text-start bg-gray hover-text-white hover-bg-primary p-4 transition-all">
+                    <div class="entry-thumbnail-wrapper me-3">
+                        <div class="post-thumbnail overflow-hidden">
+                            <i class="icon flaticon-shield flat-45 text-primary"></i>
+                        </div>
+                    </div>
+                    <div class="entry-content-wrapper">
+                        <div class="entry-header">
+                            <h5 class="entry-title mb-2"><a class="text-secondary"
+                                    href="investigation.html">Investigations</a></h5>
+                        </div>
+                        <div class="entry-content">
+                            <p>Our professional investigation services are designed to uncover facts discreetly
+                                and efficiently. We handle:</p>
+                        </div>
+                        <div class="entry-footer">
+                            <div class="mt-2"><a class="btn-link text-primary btn-hover-downline-1"
+                                    href="investigation.html">Read More</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div
+                    class="entry-wrapper d-flex flex-row align-items-start text-start bg-gray hover-text-white hover-bg-primary p-4 transition-all">
+                    <div class="entry-thumbnail-wrapper me-3">
+                        <div class="post-thumbnail overflow-hidden">
+                            <i class="icon flaticon-servers flat-45 text-primary"></i>
+                        </div>
+                    </div>
+                    <div class="entry-content-wrapper">
+                        <div class="entry-header">
+                            <h5 class="entry-title mb-2"><a class="text-secondary" href="tracking.html">Alarm /
+                                    Tracking Systems</a></h5>
+                        </div>
+                        <div class="entry-content">
+                            <p>We deliver highly reliable tracking solutions and alarm systems to safeguard
+                                assets, vehicles, and individuals.</p>
+                        </div>
+                        <div class="entry-footer">
+                            <div class="mt-2"><a class="btn-link text-primary btn-hover-downline-1"
+                                    href="tracking.html">Read More</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div
+                    class="entry-wrapper d-flex flex-row align-items-start text-start bg-gray hover-text-white hover-bg-primary p-4 transition-all">
+                    <div class="entry-thumbnail-wrapper me-3">
+                        <div class="post-thumbnail overflow-hidden">
+                            <i class="icon flaticon-online-booking flat-45 text-primary"></i>
+                        </div>
+                    </div>
+                    <div class="entry-content-wrapper">
+                        <div class="entry-header">
+                            <h5 class="entry-title mb-2"><a class="text-secondary" href="cctv.html">CCTV
+                                    Installation & Access Contol</a></h5>
+                        </div>
+                        <div class="entry-content">
+                            <p>we specialize in providing comprehensive surveillance solutions through advanced
+                                CCTV systems and robust access control</p>
+                        </div>
+                        <div class="entry-footer">
+                            <div class="mt-2"><a class="btn-link text-primary btn-hover-downline-1"
+                                    href="cctv.html">Read More</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div
+                    class="entry-wrapper d-flex flex-row align-items-start text-start bg-gray hover-text-white hover-bg-primary p-4 transition-all">
+                    <div class="entry-thumbnail-wrapper me-3">
+                        <div class="post-thumbnail overflow-hidden">
+                            <i class="icon flaticon-software flat-45 text-primary"></i>
+                        </div>
+                    </div>
+                    <div class="entry-content-wrapper">
+                        <div class="entry-header">
+                            <h5 class="entry-title mb-2"><a class="text-secondary" href="sales.html">Sales of
+                                    Gadgets</a></h5>
+                        </div>
+                        <div class="entry-content">
+                            <p>offers a wide range of premium security gadgets and electronic equipment tailored
+                                to modern needs</p>
+                        </div>
+                        <div class="entry-footer">
+                            <div class="mt-2"><a class="btn-link text-primary btn-hover-downline-1"
+                                    href="sales.html">Read More</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div
+                    class="entry-wrapper d-flex flex-row align-items-start text-start bg-gray hover-text-white hover-bg-primary p-4 transition-all">
+                    <div class="entry-thumbnail-wrapper me-3">
+                        <div class="post-thumbnail overflow-hidden">
+                            <i class="icon flaticon-security flat-45 text-primary"></i>
+                        </div>
+                    </div>
+                    <div class="entry-content-wrapper">
+                        <div class="entry-header">
+                            <h5 class="entry-title mb-2"><a class="text-secondary" href="security.html">Security
+                                    Training / Consultancy </a></h5>
+                        </div>
+                        <div class="entry-content">
+                            <p>Still Force Consults offers comprehensive security training programs and
+                                consultancy services to empower individuals, companies, and security personnel.
+                            </p>
+                        </div>
+                        <div class="entry-footer">
+                            <div class="mt-2"><a class="btn-link text-primary btn-hover-downline-1"
+                                    href="security.html">Read More</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div
+                    class="entry-wrapper d-flex flex-row align-items-start text-start bg-gray hover-text-white hover-bg-primary p-4 transition-all">
+                    <div class="entry-thumbnail-wrapper me-3">
+                        <div class="post-thumbnail overflow-hidden">
+                            <i class="icon flaticon-fingerprint-with-crosshair-focus flat-45 text-primary"></i>
+                        </div>
+                    </div>
+                    <div class="entry-content-wrapper">
+                        <div class="entry-header">
+                            <h5 class="entry-title mb-2"><a class="text-secondary" href="dept.html">Dept
+                                    recovery</a></h5>
+                        </div>
+                        <div class="entry-content">
+                            <p>Recovering overdue debts can be a daunting task, but Still Force Consults
+                                provides professional debt recovery solutions that are both effective and
+                                legally compliant.</p>
+                        </div>
+                        <div class="entry-footer">
+                            <div class="mt-2"><a class="btn-link text-primary btn-hover-downline-1"
+                                    href="dept.html">Read More</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--============================== Icon List Thumb 1 Sction End ==============================-->
+
+<!--============================== Icon Grid Thumb 1 Sction Start ==============================-->
+<div class="full-row overlay-secondary paraxify"style="background-image: url('{% static 'security/images/background/2.png' %}'); background-repeat: no-repeat;">
+    <div class="container">
+        <div class="row row-cols-md-3 row-cols-1 gy-5">
+            <div class="col">
+                <div
+                    class="entry-wrapper d-flex flex-column align-items-center justify-content-start text-center text-white transition-all">
+                    <div class="entry-thumbnail-wrapper">
+                        <div class="post-thumbnail overflow-hidden">
+                            <i class="icon flaticon-experience flat-45 text-white"></i>
+                        </div>
+                    </div>
+                    <div class="entry-content-wrapper pt-20">
+                        <div class="entry-header">
+                            <h4 class="entry-title text-white mb-4">10 Years of Experience</h4>
+                        </div>
+                        <div class="entry-content">
+                            <p>At interdum varius dictumst. Donec vivamus auctor, metus morbi fames suscipit
+                                ligula habitasse fusce aptent, aliquet porta auctor.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div
+                    class="entry-wrapper d-flex flex-column align-items-center justify-content-start text-center text-white transition-all">
+                    <div class="entry-thumbnail-wrapper">
+                        <div class="post-thumbnail overflow-hidden">
+                            <i class="icon flaticon-experience flat-45 text-white"></i>
+                        </div>
+                    </div>
+                    <div class="entry-content-wrapper pt-20">
+                        <div class="entry-header">
+                            <h4 class="entry-title text-white mb-4">100% Satisfaction</h4>
+                        </div>
+                        <div class="entry-content">
+                            <p>At interdum varius dictumst. Donec vivamus auctor, metus morbi fames suscipit
+                                ligula habitasse fusce aptent, aliquet porta auctor.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div
+                    class="entry-wrapper d-flex flex-column align-items-center justify-content-start text-center text-white transition-all">
+                    <div class="entry-thumbnail-wrapper">
+                        <div class="post-thumbnail overflow-hidden">
+                            <i class="icon flaticon-24-hours flat-45 text-white"></i>
+                        </div>
+                    </div>
+                    <div class="entry-content-wrapper pt-20">
+                        <div class="entry-header">
+                            <h4 class="entry-title text-white mb-4">24/7 Security Service</h4>
+                        </div>
+                        <div class="entry-content">
+                            <p>At interdum varius dictumst. Donec vivamus auctor, metus morbi fames suscipit
+                                ligula habitasse fusce aptent, aliquet porta auctor.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--============================== Icon Grid Thumb 1 Sction End ==============================-->
+
+<!--============================== Skills Section Start ==============================-->
+<div class="full-row bg-gray">
+    <div class="container">
+        <div class="row gy-5">
+            <div class="col-lg-5">
+                <div class="bg-white text-general p-35">
+                    <span class="tagline text-primary text-start mb-10">10 Years Of Experience</span>
+                    <h3 class="down-line-primary text-secondary text-start mb-30">Our Awesome Skills</h3>
+                    <p>Est scelerisque bibendum. Erat netus nunc magnis etiam cubilia ridiculus urna viverra.
+                        Eu. Molestie Dignissim. Pharetra lacus fringilla quis vivamus. Aliquet taciti tempor Leo
+                        eu nascetur magna inceptos quam magnis, penatibus
+                        dignissim.
+                    </p>
+                    <p>Ridiculus nonummy ligula cras penatibus convallis cum, tellus etiam maecenas conubia.
+                        Lorem eros imperdiet per vehicula nec. Nam sociis sit mi Mollis interdum taciti
+                        nascetur. Lacus proin adipiscing elementum. Nonummy nonummy.
+                        Ante sollicitudin at lectus platea magna tempor elit primis cubilia. Tempus dignissim
+                        dictum turpis porta.</p>
+                    <div class="btn-wrap mt-40">
+                        <a href="quote.html" class="btn btn-primary-filter rounded-0">Request Quote</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="bar-progress progress-hight-3">
+                    <div class="position-relative fact-counter text-secondary mb-5">
+                        <span class="highlight-font">Investigations</span>
+                        <div class="progress bg-white count wow animate__animated animate__fadeIn"
+                            data-wow-duration="0ms">
+                            <div class="skill-percent highlight-font"><span class="count-num" data-speed="3000"
+                                    data-stop="99">0</span>%</div>
+                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="99"
+                                aria-valuemax="100"> </div>
+                        </div>
+                    </div>
+                    <div class="position-relative fact-counter text-secondary mb-5">
+                        <span class="highlight-font">Alarm / Tracking Systems</span>
+                        <div class="progress bg-white count wow animate__animated animate__fadeIn"
+                            data-wow-duration="0ms">
+                            <div class="skill-percent highlight-font"><span class="count-num" data-speed="3000"
+                                    data-stop="90">0</span>%</div>
+                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="90"
+                                aria-valuemax="100"> </div>
+                        </div>
+                    </div>
+                    <div class="position-relative fact-counter text-secondary mb-5">
+                        <span class="highlight-font">CCTV Installation & Access Control</span>
+                        <div class="progress bg-white count wow animate__animated animate__fadeIn"
+                            data-wow-duration="0ms">
+                            <div class="skill-percent highlight-font"><span class="count-num" data-speed="3000"
+                                    data-stop="95">0</span>%</div>
+                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95"
+                                aria-valuemax="100"> </div>
+                        </div>
+                    </div>
+                    <div class="position-relative fact-counter text-secondary mb-5">
+                        <span class="highlight-font">Sales of Gadgets</span>
+                        <div class="progress bg-white count wow animate__animated animate__fadeIn"
+                            data-wow-duration="0ms">
+                            <div class="skill-percent highlight-font"><span class="count-num" data-speed="3000"
+                                    data-stop="80">0</span>%</div>
+                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="80"
+                                aria-valuemax="100"> </div>
+                        </div>
+                    </div>
+                    <div class="position-relative fact-counter text-secondary mb-5">
+                        <span class="highlight-font">Security Training / Consultancy</span>
+                        <div class="progress bg-white count wow animate__animated animate__fadeIn"
+                            data-wow-duration="0ms">
+                            <div class="skill-percent highlight-font"><span class="count-num" data-speed="3000"
+                                    data-stop="90">0</span>%</div>
+                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="90"
+                                aria-valuemax="100"> </div>
+                        </div>
+                    </div>
+                    <div class="position-relative fact-counter text-secondary mb-5">
+                        <span class="highlight-font">Dept Recovery</span>
+                        <div class="progress bg-white count wow animate__animated animate__fadeIn"
+                            data-wow-duration="0ms">
+                            <div class="skill-percent highlight-font"><span class="count-num" data-speed="3000"
+                                    data-stop="99">0</span>%</div>
+                            <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="99"
+                                aria-valuemax="100"> </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

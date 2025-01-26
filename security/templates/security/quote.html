@@ -1,0 +1,151 @@
+{% extends 'security/base.html' %}
+{% load static %}
+{% block content %}
+<!--============================== Page Banner 1 Section Start ==============================-->
+<div id="page-banner" class="page-title bg-light title-text-dark title-large"style="background-image: url('{% static 'security/images/background/17.png' %}'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="d-flex flex-column gap-3" style="padding:70px 0">
+                    <div class="title-wrap">
+                        <h1 class="page-title mb-0">Quote</h1>
+                    </div>
+                    <nav>
+                        <ol class="breadcrumb mb-0 greater-than">
+                            <li class="breadcrumb-item"><a href="index-security.html"
+                                    class="text-secondary hover-text-primary">Home</a></li>
+                            <li class="breadcrumb-item"><span class="text-secondary">Pages</span></li>
+                            <li class="breadcrumb-item"><span style="color:#6c757d;" class="last">Quote</span>
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--============================== Page Banner 1 Section End ==============================-->
+
+<!--============================== How works Section Start ==============================-->
+<div class="full-row">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-5">
+                <div class="bg-light py-5 px-4">
+                    <h3 class="down-line-primary mb-4">How it works</h3>
+                    <img class="mb-4" src="{% static 'security/images/thumb/width-2.png' %}" alt="image not found!">
+                    <p>At Still Force Consults, we prioritize your safety and peace of mind by offering
+                        top-notch security solutions tailored to your needs. Here’s how we make it simple for
+                        you:
+                    </p>
+                    <ul class="list-circle my-3">
+                        <li> <strong>Contact Us:</strong>
+                            Reach out to us via phone, email, or our website’s contact form. Let us know your
+                            security needs and concerns.</li>
+                        <li><strong>Initial Consultation:</strong>
+                            Our team will schedule a consultation to understand your requirements in detail.
+                            This can be done in person or remotely, depending on your preference.</li>
+                        <li><strong>Site Assessment (if applicable):</strong>
+                            For services like CCTV installation, access control, or technical surveillance
+                            countermeasures, we’ll conduct a thorough on-site assessment to identify potential
+                            vulnerabilities.</li>
+                        <li><strong>Customized Solutions:</strong>
+                            Based on your needs, we’ll provide a tailored quote outlining the services,
+                            equipment, and timeline.</li>
+                        <li><strong>Implementation:</strong>
+                            Once approved, our professional team gets to work, ensuring high-quality and timely
+                            execution of the project.</li>
+
+                        <li><strong>Follow-Up Support:</strong>
+
+                            Post-installation or service, we offer ongoing support, maintenance, and consultancy
+                            to ensure your security systems remain effective.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-8 col-md-7">
+                <form action="#" method="POST">
+                    {% csrf_token %}
+                    <div class="row g-4">
+
+                        <div class="col-lg-12">
+                            <h3 class="down-line-primary">What You Need for Your Security</h3>
+                        </div>
+                        <div class="col-lg-12">
+                            <ul class="d-flex flex-column gap-3">
+                                <li>
+                                    <input id="checkbox1" class="d-none" type="checkbox" name="surveillance_system">
+                                    <label class="custom-checkbox-1" for="checkbox1">Surveillance System</label>
+                                </li>
+                                <li>
+                                    <input id="checkbox2" class="d-none" type="checkbox" name="intrusion_detection">
+                                    <label class="custom-checkbox-1" for="checkbox2">Intrusion Detection</label>
+                                </li>
+                                <li>
+                                    <input id="checkbox3" class="d-none" type="checkbox" name="counter_surveillance">
+                                    <label class="custom-checkbox-1" for="checkbox3">Counter-Surveillance</label>
+                                </li>
+                                <li>
+                                    <input id="checkbox4" class="d-none" type="checkbox" name="security_consultancy_and_raining">
+                                    <label class="custom-checkbox-1" for="checkbox4">Security Consultancy and
+                                        Training</label>
+                                </li>
+                                <li>
+                                    <input id="checkbox5" class="d-none" type="checkbox" name="investigation_and_recovery">
+                                    <label class="custom-checkbox-1" for="checkbox5"> Investigation and
+                                        Recovery</label>
+                                </li>
+                                <li>
+                                    <input id="checkbox6" class="d-none" type="checkbox" name="gadgets_and_accessories">
+                                    <label class="custom-checkbox-1" for="checkbox6"> Gadgets and
+                                        Accessories</label>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="col-lg-12">
+                            <h3 class="down-line-primary">Additional Info</h3>
+                        </div>
+                        <div class="col-lg-12">
+                            <textarea rows="6" class="form-control bg-light" name="additional_info" placeholder="Your Message..."></textarea>
+                        </div>
+                        <div class="col-lg-12">
+                            <h3 class="down-line-primary">Please Fill With Your Details</h3>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control bg-light" name="name" value="" placeholder="Name">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control bg-light" name="phone_number" value=""
+                                placeholder="Phone Number">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control bg-light" name="email" value=""
+                                placeholder="Email Address">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control bg-light" name="subject" value=""
+                                placeholder="Subject">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control bg-light" name="preference_date" value=""
+                                placeholder="Preference service date">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control bg-light" name="preference_time" value=""
+                                placeholder="Preference service Time">
+                        </div>
+                        <div class="col-md-12">
+                            <textarea class="form-control bg-light" cols="30" rows="6" name="message" placeholder="Message"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary-filter rounded-0"> Submit</button>
+                        
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--============================== How works Section End ==============================-->
+
+{% endblock %}

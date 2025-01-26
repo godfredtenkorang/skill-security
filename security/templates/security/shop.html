@@ -1,0 +1,389 @@
+{% extends 'security/base.html' %}
+{% load static %}
+{% block content %}
+<!--============================== Page Banner 1 Section Start ==============================-->
+<div id="page-banner" class="page-title bg-light title-text-dark title-large"style="background-image: url('{% static 'security/images/background/17.png' %}'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="d-flex flex-column gap-3" style="padding:70px 0">
+                    <div class="title-wrap">
+                        <h1 class="page-title mb-0">Shop</h1>
+                    </div>
+                    <nav>
+                        <ol class="breadcrumb mb-0 greater-than">
+                            <li class="breadcrumb-item"><a href="index-security.html"
+                                    class="text-secondary hover-text-primary">Home</a></li>
+                            <li class="breadcrumb-item"><span style="color:#6c757d;" class="last">Shop</span>
+                            </li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--============================== Page Banner 1 Section End ==============================-->
+
+<!--============================== Shop Section Start ==============================-->
+<div class="full-row">
+    <div class="container">
+        <div class="row gy-5">
+            <!--============================== Sidebar start ==============================-->
+            <div id="secondary" class="widget-area col-lg-3 order-lg-1">
+                <div id="sidebar" class="sidebar sidebar-shop">
+                    <div class="sidebar-inner">
+
+
+                        <div id="top-rated-product-1" class="widget widget_top_rated_product">
+                            <h4 class="widget-title down-line-primary">Top Rated Product</h4>
+                            <ul class="product_list_widget">
+                                <li>
+                                    <a href="#">
+                                        <img src="{% static 'security/images/products/Pepper spray.png' %}"
+                                            class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
+                                            alt="Product Image ?">
+                                        <span class="product-title">Pepper Spray</span>
+                                    </a>
+                                    <ins><span class="woocommerce-Price-amount amount"><bdi><span
+                                                    class="woocommerce-Price-currencySymbol">$</span>18.00</bdi></span></ins>
+                                    <div class="fancy-star-rating">
+                                        <div class="rating-wrap">
+                                            <div class="fancy-rating good"><span>★★★★★</span></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="{% static 'security/images/products/shocker.jpg' %}"
+                                            class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
+                                            alt="Product Image ?">
+                                        <span class="product-title">Shocker</span>
+                                    </a>
+                                    <ins><span class="woocommerce-Price-amount amount"><bdi><span
+                                                    class="woocommerce-Price-currencySymbol">$</span>9.99</bdi></span></ins>
+                                    <div class="fancy-star-rating">
+                                        <div class="rating-wrap">
+                                            <div class="fancy-rating good"><span>★★★★★</span></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="{% static 'security/images/products/BUG.jpeg' %}"
+                                            class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
+                                            alt="Product Image ?">
+                                        <span class="product-title">Bug sweeper(TSCM)</span>
+                                    </a>
+                                    <del>
+                                        <span class="woocommerce-Price-amount amount">
+                                            <bdi><span class="woocommerce-Price-currencySymbol">$</span>17.50</bdi>
+                                        </span>
+                                    </del>
+                                    <ins><span class="woocommerce-Price-amount amount"><bdi><span
+                                                    class="woocommerce-Price-currencySymbol">$</span>13.50</bdi></span></ins>
+                                    <div class="fancy-star-rating">
+                                        <div class="rating-wrap">
+                                            <div class="fancy-rating good"><span>★★★★★</span></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="{% static 'security/images/products/GPS.jpeg' %}"
+                                            class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
+                                            alt="Product Image ?">
+                                        <span class="product-title">GPS tracker with voice recorder</span>
+                                    </a>
+                                    <ins><span class="woocommerce-Price-amount amount"><bdi><span
+                                                    class="woocommerce-Price-currencySymbol">$</span>11.56</bdi></span></ins>
+                                    <div class="fancy-star-rating">
+                                        <div class="rating-wrap">
+                                            <div class="fancy-rating good"><span>★★★★★</span></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="{% static 'security/images/products/access.png' %}"
+                                            class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
+                                            alt="Product Image ?">
+                                        <span class="product-title">Access Control System</span>
+                                    </a>
+                                    <ins><span class="woocommerce-Price-amount amount"><bdi><span
+                                                    class="woocommerce-Price-currencySymbol">$</span>11.56</bdi></span></ins>
+                                    <div class="fancy-star-rating">
+                                        <div class="rating-wrap">
+                                            <div class="fancy-rating good"><span>★★★★★</span></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="{% static 'security/images/products/time.jpeg' %}"
+                                            class="attachment-woocommerce_thumbnail size-woocommerce_thumbnail"
+                                            alt="Product Image ?">
+                                        <span class="product-title">Time Attendance System</span>
+                                    </a>
+                                    <ins><span class="woocommerce-Price-amount amount"><bdi><span
+                                                    class="woocommerce-Price-currencySymbol">$</span>11.56</bdi></span></ins>
+                                    <div class="fancy-star-rating">
+                                        <div class="rating-wrap">
+                                            <div class="fancy-rating good"><span>★★★★★</span></div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9 order-lg-2">
+                <div class="row">
+                    <div class="col">
+                        <div
+                            class="products-header d-flex justify-content-between align-items-center py-10 px-20 bg-light mb-30">
+                            <div class="products-header-left d-flex align-items-center gap-2">
+                                <h6 class="woocommerce-products-header__title page-title">Shop</h6>
+                                <p class="woocommerce-result-count">(Showing 1 – 6 products of 6 products)</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="row row-cols-lg-3 row-cols-sm-2 row-cols-1 g-4 product-style-3 e-img-bg-light transition-all">
+                    <div class="col">
+                        <div class="product type-product">
+                            <div class="product-wrapper">
+                                <div class="product-image">
+                                    <span class="on-sale">Sale!</span>
+                                    <a href="pepperspray.html" class="woocommerce-LoopProduct-link" target="_self"><img
+                                            src="{% static 'security/images/products/Pepper spray.png' %}" alt="Image Not Found !"></a>
+                                </div>
+                                <div class="product-info">
+                                    <h3 class="product-title"><a href="pepperspray.html" target="_self">Pepper
+                                            Spray</a></h3>
+                                    <div class="price-wrap">
+                                        <div class="product-price">
+                                            <span class="price"><del><span
+                                                        class="woocommerce-Price-amount amount"><bdi><span
+                                                                class="woocommerce-Price-currencySymbol">$</span>100.00</bdi>
+                                                    </span>
+                                                </del> <ins><span class="woocommerce-Price-amount amount"><bdi><span
+                                                                class="woocommerce-Price-currencySymbol">$</span>80.00</bdi></span></ins></span>
+                                        </div>
+                                    </div>
+                                    <div class="fancy-star-rating">
+                                        <div class="rating-wrap">
+                                            <div class="fancy-rating good"><span>★★★★★</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="hover-area">
+                                        <div class="cart-button">
+                                            <a href="pepperspray.html"
+                                                class="button product_type_simple add_to_cart_button ajax_add_to_cart">BUY
+                                                NOW</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product type-product">
+                            <div class="product-wrapper">
+                                <div class="product-image">
+                                    <a href="shocker.html" class="woocommerce-LoopProduct-link" target="_self"><img
+                                            src="{% static 'security/images/products/shocker.jpg' %}" alt="Image Not Found !"></a>
+                                </div>
+                                <div class="product-info">
+                                    <h3 class="product-title"><a href="shocker.html" target="_self">Shocker</a>
+                                    </h3>
+                                    <div class="price-wrap">
+                                        <div class="product-price">
+                                            <span class="price">
+                                                <ins>
+                                                    <span class="woocommerce-Price-amount amount"><bdi><span
+                                                                class="woocommerce-Price-currencySymbol">$</span>17.99</bdi>
+                                                    </span>
+                                                </ins>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="fancy-star-rating">
+                                        <div class="rating-wrap">
+                                            <div class="fancy-rating good"><span>★★★★★</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="hover-area">
+                                        <div class="cart-button">
+                                            <a href="shocker.html"
+                                                class="button product_type_simple add_to_cart_button ajax_add_to_cart">BUY
+                                                NOW</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product type-product">
+                            <div class="product-wrapper">
+                                <div class="product-image">
+                                    <a href="bug.html" class="woocommerce-LoopProduct-link" target="_self"><img
+                                            src="{% static 'security/images/products/BUG.jpeg' %}" alt="Image Not Found !"></a>
+                                </div>
+                                <div class="product-info">
+                                    <h3 class="product-title"><a href="bug.html" target="_self">Bug sweeper(
+                                            TSCM)</a></h3>
+                                    <div class="price-wrap">
+                                        <div class="product-price">
+                                            <span class="price"><ins><span
+                                                        class="woocommerce-Price-amount amount"><bdi><span
+                                                                class="woocommerce-Price-currencySymbol">$</span>19.99</bdi>
+                                                    </span>
+                                                </ins>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="fancy-star-rating">
+                                        <div class="rating-wrap">
+                                            <div class="fancy-rating good"><span>★★★★★</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="hover-area">
+                                        <div class="cart-button">
+                                            <a href="bug.html"
+                                                class="button product_type_simple add_to_cart_button ajax_add_to_cart">BUY
+                                                NOW</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product type-product">
+                            <div class="product-wrapper">
+                                <div class="product-image">
+                                    <a href="gps.html" class="woocommerce-LoopProduct-link" target="_self"><img
+                                            src="{% static 'security/images/products/GPS.jpeg' %}" alt="Image Not Found !"></a>
+                                </div>
+                                <div class="product-info">
+                                    <h3 class="product-title"><a href="gps.html" target="_self">GPS tracker with
+                                            voice recorder</a></h3>
+                                    <div class="price-wrap">
+                                        <div class="product-price">
+                                            <span class="price"><ins><span
+                                                        class="woocommerce-Price-amount amount"><bdi><span
+                                                                class="woocommerce-Price-currencySymbol">$</span>9.99</bdi>
+                                                    </span>
+                                                </ins>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="fancy-star-rating">
+                                        <div class="rating-wrap">
+                                            <div class="fancy-rating good"><span>★★★★★</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="hover-area">
+                                        <div class="cart-button">
+                                            <a href="gps.html"
+                                                class="button product_type_simple add_to_cart_button ajax_add_to_cart">BUY
+                                                NOW</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product type-product">
+                            <div class="product-wrapper">
+                                <div class="product-image">
+                                    <span class="on-sale">Sale!</span>
+                                    <a href="access.html" class="woocommerce-LoopProduct-link" target="_self"><img
+                                            src="{% static 'security/images/products/access.png' %}" alt="Image Not Found !"></a>
+                                </div>
+                                <div class="product-info">
+                                    <h3 class="product-title"><a href="access.html" target="_self">Access
+                                            Control System</a></h3>
+                                    <div class="price-wrap">
+                                        <div class="product-price">
+                                            <span class="price"><ins><span
+                                                        class="woocommerce-Price-amount amount"><bdi><span
+                                                                class="woocommerce-Price-currencySymbol">$</span>12.00</bdi>
+                                                    </span>
+                                                </ins>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="fancy-star-rating">
+                                        <div class="rating-wrap">
+                                            <div class="fancy-rating good"><span>★★★★★</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="hover-area">
+                                        <div class="cart-button">
+                                            <a href="access.html"
+                                                class="button product_type_simple add_to_cart_button ajax_add_to_cart">BUY
+                                                NOW</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product type-product">
+                            <div class="product-wrapper">
+                                <div class="product-image">
+                                    <a href="time.html" class="woocommerce-LoopProduct-link" target="_self"><img
+                                            src="{% static 'security/images/products/time.jpeg' %}" alt="Image Not Found !"></a>
+                                </div>
+                                <div class="product-info">
+                                    <h3 class="product-title"><a href="time.html" target="_self">Time Attendance
+                                            System</a></h3>
+                                    <div class="price-wrap">
+                                        <div class="product-price">
+                                            <span class="price"><ins><span
+                                                        class="woocommerce-Price-amount amount"><bdi><span
+                                                                class="woocommerce-Price-currencySymbol">$</span>13.50</bdi>
+                                                    </span>
+                                                </ins>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="fancy-star-rating">
+                                        <div class="rating-wrap">
+                                            <div class="fancy-rating good"><span>★★★★★</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="hover-area">
+                                        <div class="cart-button">
+                                            <a href="time.html"
+                                                class="button product_type_simple add_to_cart_button ajax_add_to_cart">BUY
+                                                NOW</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--============================== Sidebar start ==============================-->
+</div>
+</div>
+</div>
+</div>
+
+
+{% endblock %}

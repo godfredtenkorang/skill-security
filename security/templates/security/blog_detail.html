@@ -1,0 +1,209 @@
+{% extends 'security/base.html' %}
+{% load static %}
+{% block content %}
+<!--============================== Page Banner 1 Section Start ==============================-->
+<div id="page-banner" class="page-title bg-light title-text-dark title-large"style="background-image: url('{% static 'security/images/background/17.png' %}'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="d-flex flex-column gap-3" style="padding:70px 0">
+                    <div class="title-wrap">
+                        <h1 class="page-title mb-0">News Details</h1>
+                    </div>
+                    <nav>
+                        <ol class="breadcrumb mb-0 greater-than">
+                            <li class="breadcrumb-item"><a href="index.html"
+                                    class="text-secondary hover-text-primary">Home</a></li>
+                            <li class="breadcrumb-item"><a href="news-details-left-sidebar.html"
+                                    class="text-secondary hover-text-primary">News</a></li>
+                            <li class="breadcrumb-item"><span style="color:#6c757d;" class="last">News
+                                    Details</span></li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--============================== Page Banner 1 Section End ==============================-->
+
+<!--============================== News Details Section Start ==============================-->
+<div class="full-row">
+    <div class="container">
+        <div class="row gy-5">
+            <!--============================== Sidebar start ==============================-->
+            <div id="secondary" class="widget-area col-lg-4">
+                <div id="sidebar" class="sidebar sidebar-blog bg-light p-30">
+                    <div class="sidebar-inner">
+                        <div id="categories-1" class="widget border-0 widget_categories">
+                            <h4 class="widget-title down-line-primary">Categories</h4>
+                            <ul>
+                                <li class="cat-item cat-item-16"><a href="#">Security Service</a> (10)</li>
+                                <li class="cat-item cat-item-17"><a href="#">Defense Training</a> (06)</li>
+                                <li class="cat-item cat-item-18"><a href="#">VIP Security</a> (07)</li>
+                                <li class="cat-item cat-item-18"><a href="#">Private Security</a> (11)</li>
+                                <li class="cat-item cat-item-18"><a href="#">CCTV Systems Network</a> (05)</li>
+                                <li class="cat-item cat-item-18"><a href="#">Reports</a> (12)</li>
+                            </ul>
+                        </div>
+                        <div id="archives-1" class="widget border-0 widget_archive">
+                            <h4 class="widget-title down-line-primary">Archive</h4>
+                            <ul>
+                                <li><a href="#">November 2021</a></li>
+                                <li><a href="#">August 2021</a></li>
+                                <li><a href="#">June 2021</a></li>
+                                <li><a href="#">May 2021</a></li>
+                                <li><a href="#">March 2021</a></li>
+                            </ul>
+                        </div>
+                        <div id="recent-posts-1" class="widget border-0 widget_recent_entries">
+                            <h4 class="widget-title down-line-primary">Recent Post</h4>
+                            <ul>
+                                <li>
+                                    <a href="#">Habitasse felis magna velit posuere ridiculus curabitur</a>
+                                    <span class="post-date">May 12, 2021</span>
+                                </li>
+                                <li>
+                                    <a href="#">Elit auctor primis ac ullamcorper libero. Felis erat auctor</a>
+                                    <span class="post-date">August 28, 2021</span>
+                                </li>
+                                <li>
+                                    <a href="#">Tempus interdum justo aliquet id vulputate fringilla</a>
+                                    <span class="post-date">March 19, 2021</span>
+                                </li>
+                                <li>
+                                    <a href="#">Porttitor primis vel libero consectetuer eleifend feugiat</a>
+                                    <span class="post-date">February 09, 2021</span>
+                                </li>
+                                <li>
+                                    <a href="#">Conubia habitant vivamus nonummy per curabitur laoreet</a>
+                                    <span class="post-date">November 17, 2021</span>
+                                </li>
+                            </ul>
+
+                        </div>
+                        <div id="tags-1" class="widget border-0 widget_tag_cloud">
+                            <h4 class="widget-title down-line-primary">Product Tag</h4>
+                            <div class="tagcloud">
+                                <ul>
+                                    <li><a href="#">general</a></li>
+                                    <li><a href="#">videos</a></li>
+                                    <li><a href="#">media</a></li>
+                                    <li><a href="#">web</a></li>
+                                    <li><a href="#">parallax</a></li>
+                                    <li><a href="#">ecommerce</a></li>
+                                    <li><a href="#">t-shirt</a></li>
+                                    <li><a href="#">women</a></li>
+                                    <li><a href="#">trade</a></li>
+                                    <li><a href="#">animation</a></li>
+                                    <li><a href="#">theme</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="primary" class="content-area col-lg-8">
+                <article
+                    class="single-post-page meta-separator-bar  post-2098 post type-post status-publish format-standard has-post-thumbnail hentry category-electronic category-man-fashion tag-blazer tag-fashion tag-men tag-model tag-watch">
+                    <div class="entry-post single-post">
+                        <div class="entry-thumbnail-wrapper">
+                            <div class="single-post-thumbnail">
+                                <img src="{{object.image.url}}"
+                                    class="attachment-single_thumb size-single_thumb wp-post-image" alt="">
+                            </div>
+                        </div>
+                        <div class="post-content-wrapper pt-4">
+                            <div class="post-header">
+                                <h3 class="entry-title mb-3">{{ object.title }}
+                                </h3>
+                                <div
+                                    class="post-meta d-flex flex-wrap gap-y-20 align-items-center font-small mb-3 mt-4">
+                                    <span class="author-link">
+                                        <i class="flaticon-user-silhouette flat-15 me-1 text-general"></i>
+                                        By <a href="#" title="Posts by admin" rel="author">admin</a>
+                                    </span>
+                                    <span class="post-date">
+                                        <i class="flaticon-calendar  flat-15 me-1 text-general"></i>
+                                        <a href="#">May 13, 2021</a>
+                                    </span>
+                                    <span class="comments-num">
+                                        <i class="flaticon-comments flat-15 me-1 text-general"></i>
+                                        <a href="#">0<span class="post-meta-label"> Comments</span></a>
+                                    </span>
+                                    
+                                    
+                                    <span class="general">
+                                        <a href="#"><span class="post-meta-label"> Media</span></a>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="post-content my-5">
+                                <p>{{ object.subtitle }}</p>
+                                
+                                
+                                <p>{{ object.content }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                
+                
+                
+                <div class="comments_area mt-5">
+                    <div id="comments" class="comments-area">
+                        <h3 class="comments-title down-line-primary">Comments ({{ post_comments_count }})</h3>
+                        <ol class="comment-list">
+                            {% for comment in post_comments %}
+                            <li class="comment byuser comment-author-admin bypostauthor even thread-even depth-1"
+                                id="comment-1">
+                                <div id="div-comment-1" class="comment-body">
+                                    <div class="comment-author vcard">
+                                        <img class="avatar avatar-80 photo" alt="" src="{% static 'security/images/avatar/1.png' %}">
+                                        <cite class="fn"><a href="#" class="url">{{comment.username}}</a></cite>
+                                    </div>
+                                    <div class="comment-meta commentmetadata">Posted On: <a href="#">{{comment.date}} </a> </div>
+                                    <p>{{comment.content}}</p>
+                                    
+                                    
+                                </div>
+                            </li>
+                            {% endfor %}
+                        </ol>
+                        <div id="respond" class="comment-respond mt-5">
+                            <h3 id="reply-title" class="comment-reply-title">Leave Your Comment <small><a rel="nofollow"
+                                        id="cancel-comment-reply-link" href="#" style="display:none;">Cancel
+                                        reply</a></small></h3>
+                            <form action="#" method="post" id="commentform" class="comment-form">
+                                {% csrf_token %}
+                                <p class="comment-form-author">
+                                    <input id="author" name="username" type="text" placeholder="Name" size="30"
+                                        maxlength="245" required="required">
+                                </p>
+                                <p class="comment-form-email">
+                                    <input id="email" name="email" type="text" placeholder="Email Address" size="30"
+                                        maxlength="100" required="required">
+                                </p>
+                                <p class="comment-form-comment">
+                                    <textarea id="comment" placeholder="Message" name="content" cols="45" rows="8"
+                                        maxlength="65525" required="required"></textarea>
+                                </p>
+                                <p class="form-submit">
+                                    <button class="submit btn btn-primary-filter rounded-0" id="send" value="send"
+                                        type="submit">Submit</button>
+                                </p>
+                            </form>
+                        </div>
+                        <!-- #respond -->
+
+                    </div>
+                    <!-- #comments -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--============================== News Details Section End ==============================-->
+
+
+{% endblock %}

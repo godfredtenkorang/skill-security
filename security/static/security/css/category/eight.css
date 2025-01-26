@@ -1,0 +1,162 @@
+/*======================================================================
+Theme Color All Codes Variable
+======================================================================*/
+
+:root {
+    --theme-general-color: #67686a;
+    /* theme gray color */
+}
+
+:root {
+    --theme-primary-color: #fc653c;
+    /* theme primary color */
+}
+
+:root {
+    --theme-secondary-color: #1e1e22;
+    /* theme secondary color */
+}
+
+:root {
+    --theme-white-color: #fff;
+    /* theme white font color */
+}
+
+:root {
+    --theme-light-color: #f6f7fa;
+    /* theme light gray color */
+}
+
+:root {
+    --theme-gray-color: #dfdfdf;
+    /* theme gray color */
+}
+
+:root {
+    --theme-text-gray: #c3c3c3;
+    /* theme text gray color */
+}
+
+:root {
+    --theme-dark-color: #1c1e22;
+    /* theme dark color */
+}
+
+:root {
+    --theme-footer-color: #1e2124;
+    /* theme dark color */
+}
+
+:root {
+    --theme-primary-opacity-color: rgba(252, 101, 60, .8);
+    /* theme secondary color */
+}
+
+:root {
+    --theme-secondary-opacity-color: rgba(38, 43, 111, .7)
+    /* theme secondary opacity color */
+}
+
+:root {
+    --theme-dark-opacity-color: rgba(28, 30, 34, .7)
+    /* theme dark opacity color */
+}
+
+:root {
+    --theme-white-opacity-color: rgba(255, 255, 255, 0.5);
+    /* theme light color */
+}
+
+:root {
+    --text-light-color: #a5a5a5;
+    /* text light color */
+}
+
+:root {
+    --theme-extra1-color: #36B357;
+    /* theme extra1 color ok*/
+}
+
+:root {
+    --theme-extra2-color: #9262c5;
+    /* theme extra2 color ok*/
+}
+
+:root {
+    --theme-extra3-color: #e56f91;
+    /* theme extra3 color ok*/
+}
+
+:root {
+    --theme-extra4-color: #292d36;
+    /* theme extra4 color ok*/
+}
+
+
+/*======================================================================
+Font Variables
+======================================================================*/
+
+:root {
+    --theme-general-font: 'Kumbh Sans', sans-serif;
+    /* Font use for normal text and general text */
+}
+
+:root {
+    --theme-hiperlink-font: 'Kumbh Sans', sans-serif;
+    /* Font use for link text */
+}
+
+:root {
+    --theme-highlight-font: 'Kumbh Sans', sans-serif;
+    /* Font used in title or special area */
+}
+
+
+/*======================================================================
+Extra Styles Start
+======================================================================*/
+
+body {
+    font-weight: 500;
+}
+
+h1,
+.h1 {
+    font-size: 50px;
+    font-weight: 700
+}
+
+h2,
+.h2 {
+    font-size: 36px;
+    font-weight: 700
+}
+
+h3,
+.h3 {
+    font-size: 30px;
+    font-weight: 700
+}
+
+h4,
+.h4 {
+    font-size: 21px;
+    font-weight: 700;
+}
+
+h5,
+.h5 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+h6,
+.h6 {
+    font-size: 16px;
+    font-weight: 600
+}
+
+.navbar-expand-lg .navbar-nav .nav-item .nav-link {
+    font-size: 15px;
+}

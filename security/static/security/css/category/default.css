@@ -1,0 +1,161 @@
+/*======================================================================
+Theme Color All Codes Variable
+======================================================================*/
+
+:root {
+    --theme-general-color: #67686a;
+    /* theme gray color */
+}
+
+:root {
+    --theme-primary-color: #f58f47;
+    /* theme primary color */
+}
+
+:root {
+    --theme-secondary-color: #0c193e;
+    /* theme secondary color */
+}
+
+:root {
+    --theme-white-color: #fff;
+    /* theme white font color */
+}
+
+:root {
+    --theme-light-color: #fbf8f6;
+    /* theme light gray color */
+}
+
+:root {
+    --theme-gray-color: #f8f8f8;
+    /* theme gray color */
+}
+
+:root {
+    --theme-text-gray: #c3c3c3;
+    /* theme text gray color */
+}
+
+:root {
+    --theme-dark-color: #181a1d;
+    /* theme dark color */
+}
+
+:root {
+    --theme-footer-color: #1e2124;
+    /* theme dark color */
+}
+
+:root {
+    --theme-primary-opacity-color: rgba(245, 133, 54, .8);
+    /* theme secondary color */
+}
+
+:root {
+    --theme-secondary-opacity-color: rgba(12, 25, 62, .8);
+    /* theme secondary color */
+}
+
+:root {
+    --theme-white-opacity-color: rgba(255, 255, 255, 0.5);
+    /* theme light color */
+}
+
+:root {
+    --text-light-color: #a5a5a5;
+    /* text light color */
+}
+
+
+/*======================================================================
+Font Variables
+======================================================================*/
+
+:root {
+    --theme-general-font: 'Cabin', sans-serif;
+    /* Font use for normal text and general text */
+}
+
+:root {
+    --theme-hiperlink-font: 'Cabin', sans-serif;
+    /* Font use for normal text and general text */
+}
+
+:root {
+    --theme-highlight-font: 'Cabin', sans-serif;
+    /* Font used in title or special area */
+}
+
+
+/*======================================================================
+Extra Styles Start
+======================================================================*/
+
+.owl-nav-color-1[class*="owl-nav-icon-"] .owl-nav .nav-btn .icon {
+    border: 2px solid var(--theme-primary-color);
+    background-color: transparent;
+    color: var(--theme-primary-color);
+    width: 40px;
+    height: 40px
+}
+
+.owl-nav-color-1[class*="owl-nav-icon-"] .owl-nav .nav-btn .icon:hover {
+    background-color: var(--theme-primary-color);
+    color: var(--theme-white-color);
+}
+
+.top-header-col>* {
+    font-size: 14px;
+}
+
+.default-header .top-links li>a,
+.my-account-dropdown>a {
+    color: var(--theme-general-color);
+}
+
+body {
+    font-size: 16px;
+}
+
+.dropdown-item {
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+h1,
+.h1 {
+    font-size: 50px;
+    font-weight: 700
+}
+
+h2,
+.h2 {
+    font-size: 36px;
+    font-weight: 700
+}
+
+h3,
+.h3 {
+    font-size: 30px;
+    font-weight: 600
+}
+
+h4,
+.h4 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+h5,
+.h5 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+h6,
+.h6 {
+    font-size: 16px;
+    font-weight: 600
+}
