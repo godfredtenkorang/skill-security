@@ -86,3 +86,42 @@ def contact(request):
 
 def clients(request):
     return render(request, 'security/clienteles.html')
+
+def investigation(request):
+    return render(request, 'security/investigation.html')
+
+def sales(request):
+    return render(request, 'security/sales.html')
+
+def security(request):
+    return render(request, 'security/security.html')
+
+def shocker(request):
+    return render(request, 'security/shocker.html')
+
+def terms(request):
+    return render(request, 'security/terms.html')
+
+def time(request):
+    return render(request, 'security/time.html')
+
+def tracking(request):
+    return render(request, 'security/tracking.html')
+
+def access(request):
+    return render(request, 'security/access.html')
+
+def bug(request):
+    return render(request, 'security/bug.html')
+
+def cctv(request):
+    return render(request, 'security/cctv.html')
+
+def dept(request):
+    return render(request, 'security/dept.html')
+
+def gps(request):
+    return render(request, 'security/gps.html')
+
+def pepperspray(request):
+    return render(request, 'security/pepperspray.html')

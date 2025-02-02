@@ -3,7 +3,8 @@
 {% block content %}
 
 <!--============================== Page Banner 1 Section Start ==============================-->
-<div id="page-banner" class="page-title bg-light title-text-dark title-large"style="background-image: url('{% static 'security/images/background/17.png' %}'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+<div id="page-banner" class="page-title bg-light title-text-dark title-large"
+    style="background-image: url('{% static 'security/images/background/17.png' %}'); background-repeat: no-repeat; background-position: center; background-size: cover;">
     <div class="container">
         <div class="row">
             <div class="col">
@@ -41,7 +42,7 @@
                     <div class="entry-content-wrapper">
                         <div class="entry-header">
                             <h5 class="entry-title mb-2"><a class="text-secondary"
-                                    href="investigation.html">Investigations</a></h5>
+                                    href="{% url 'investigation' %}">Investigations</a></h5>
                         </div>
                         <div class="entry-content">
                             <p>Our professional investigation services are designed to uncover facts discreetly
@@ -49,7 +50,7 @@
                         </div>
                         <div class="entry-footer">
                             <div class="mt-2"><a class="btn-link text-primary btn-hover-downline-1"
-                                    href="investigation.html">Read More</a></div>
+                                    href="{% url 'investigation' %}">Read More</a></div>
                         </div>
                     </div>
                 </div>
@@ -64,7 +65,7 @@
                     </div>
                     <div class="entry-content-wrapper">
                         <div class="entry-header">
-                            <h5 class="entry-title mb-2"><a class="text-secondary" href="tracking.html">Alarm /
+                            <h5 class="entry-title mb-2"><a class="text-secondary" href="{% url 'tracking' %}">Alarm /
                                     Tracking Systems</a></h5>
                         </div>
                         <div class="entry-content">
@@ -73,7 +74,7 @@
                         </div>
                         <div class="entry-footer">
                             <div class="mt-2"><a class="btn-link text-primary btn-hover-downline-1"
-                                    href="tracking.html">Read More</a></div>
+                                    href="{% url 'tracking' %}">Read More</a></div>
                         </div>
                     </div>
                 </div>
@@ -88,7 +89,7 @@
                     </div>
                     <div class="entry-content-wrapper">
                         <div class="entry-header">
-                            <h5 class="entry-title mb-2"><a class="text-secondary" href="cctv.html">CCTV
+                            <h5 class="entry-title mb-2"><a class="text-secondary" href="{% url 'cctv' %}">CCTV
                                     Installation & Access Contol</a></h5>
                         </div>
                         <div class="entry-content">
@@ -97,7 +98,7 @@
                         </div>
                         <div class="entry-footer">
                             <div class="mt-2"><a class="btn-link text-primary btn-hover-downline-1"
-                                    href="cctv.html">Read More</a></div>
+                                    href="{% url 'cctv' %}">Read More</a></div>
                         </div>
                     </div>
                 </div>
@@ -112,7 +113,7 @@
                     </div>
                     <div class="entry-content-wrapper">
                         <div class="entry-header">
-                            <h5 class="entry-title mb-2"><a class="text-secondary" href="sales.html">Sales of
+                            <h5 class="entry-title mb-2"><a class="text-secondary" href="{% url 'sales' %}">Sales of
                                     Gadgets</a></h5>
                         </div>
                         <div class="entry-content">
@@ -121,7 +122,7 @@
                         </div>
                         <div class="entry-footer">
                             <div class="mt-2"><a class="btn-link text-primary btn-hover-downline-1"
-                                    href="sales.html">Read More</a></div>
+                                    href="{% url 'sales' %}">Read More</a></div>
                         </div>
                     </div>
                 </div>
@@ -136,7 +137,7 @@
                     </div>
                     <div class="entry-content-wrapper">
                         <div class="entry-header">
-                            <h5 class="entry-title mb-2"><a class="text-secondary" href="security.html">Security
+                            <h5 class="entry-title mb-2"><a class="text-secondary" href="{% url 'security' %}">Security
                                     Training / Consultancy </a></h5>
                         </div>
                         <div class="entry-content">
@@ -146,7 +147,7 @@
                         </div>
                         <div class="entry-footer">
                             <div class="mt-2"><a class="btn-link text-primary btn-hover-downline-1"
-                                    href="security.html">Read More</a></div>
+                                    href="{% url 'security' %}">Read More</a></div>
                         </div>
                     </div>
                 </div>
@@ -161,7 +162,7 @@
                     </div>
                     <div class="entry-content-wrapper">
                         <div class="entry-header">
-                            <h5 class="entry-title mb-2"><a class="text-secondary" href="dept.html">Dept
+                            <h5 class="entry-title mb-2"><a class="text-secondary" href="{% url 'dept' %}">Dept
                                     recovery</a></h5>
                         </div>
                         <div class="entry-content">
@@ -171,7 +172,7 @@
                         </div>
                         <div class="entry-footer">
                             <div class="mt-2"><a class="btn-link text-primary btn-hover-downline-1"
-                                    href="dept.html">Read More</a></div>
+                                    href="{% url 'dept' %}">Read More</a></div>
                         </div>
                     </div>
                 </div>
@@ -182,7 +183,8 @@
 <!--============================== Icon List Thumb 1 Sction End ==============================-->
 
 <!--============================== Icon Grid Thumb 1 Sction Start ==============================-->
-<div class="full-row overlay-secondary paraxify"style="background-image: url('{% static 'security/images/background/2.png' %}'); background-repeat: no-repeat;">
+<div class="full-row overlay-secondary paraxify"
+    style="background-image: url('{% static 'security/images/background/2.png' %}'); background-repeat: no-repeat;">
     <div class="container">
         <div class="row row-cols-md-3 row-cols-1 gy-5">
             <div class="col">
@@ -266,7 +268,7 @@
                         Ante sollicitudin at lectus platea magna tempor elit primis cubilia. Tempus dignissim
                         dictum turpis porta.</p>
                     <div class="btn-wrap mt-40">
-                        <a href="quote.html" class="btn btn-primary-filter rounded-0">Request Quote</a>
+                        <a href="{% url 'quote' %}" class="btn btn-primary-filter rounded-0">Request Quote</a>
                     </div>
                 </div>
             </div>
