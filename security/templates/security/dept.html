@@ -3,8 +3,7 @@
 {% block content %}
 
 <!--============================== Page Banner 1 Section Start ==============================-->
-<div id="page-banner" class="page-title bg-light title-text-dark title-large"
-    style="background-image: url('assets/images/background/17.png'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+<div id="page-banner" class="page-title bg-light title-text-dark title-large"style="background-image: url('{% static 'security/images/background/17.png' %}'); background-repeat: no-repeat; background-position: center; background-size: cover;">
     <div class="container">
         <div class="row">
             <div class="col">
@@ -14,9 +13,9 @@
                     </div>
                     <nav>
                         <ol class="breadcrumb mb-0 greater-than">
-                            <li class="breadcrumb-item"><a href="index.html"
+                            <li class="breadcrumb-item"><a href="{% url 'index' %}"
                                     class="text-secondary hover-text-primary">Home</a></li>
-                            <li class="breadcrumb-item"><a href="service.html"
+                            <li class="breadcrumb-item"><a href="{% url 'service' %}"
                                     class="text-secondary hover-text-primary">Service</a></li>
                             <li class="breadcrumb-item"><span style="color:#6c757d;" class="last">Service
                                     Details</span></li>
@@ -37,13 +36,13 @@
                 <div class="inner-sidebar">
                     <div class="sidebar-nav widget">
                         <ul>
-                            <li><a href="investigation.html">Investigation</a></li>
-                            <li><a href="tracking.html">Tracking / Alarm Systems</a></li>
-                            <li><a href="cctv.html">CCTV Installation & Access Control</a></li>
-
-                            <li><a href="sales.html">Sales of Gadgets</a></li>
-                            <li><a href="security.html">Security Training / Consultancy</a></li>
-                            <li><a href="dept.html">Dept Recovery</a></li>
+                            <li><a href="{% url 'investigation' %}">Investigation</a></li>
+                            <li><a href="{% url 'tracking' %}">Tracking / Alarm Systems</a></li>
+                            <li><a href="{% url 'cctv' %}">CCTV Installation & Access Control</a></li>
+                        
+                            <li><a href="{% url 'sales' %}">Sales of Gadgets</a></li>
+                            <li><a href="{% url 'security' %}">Security Training / Consultancy</a></li>
+                            <li><a href="{% url 'dept' %}">Dept Recovery</a></li>
                         </ul>
                     </div>
                 </div>
@@ -51,7 +50,7 @@
             <div class="col-md-8">
                 <div class="row mb-4">
                     <div class="col-md-12">
-                        <img src="assets/images/thumb/width-33.png" alt="image not found!">
+                        <img src="{% static 'security/images/thumb/width-33.png' %}" alt="image not found!">
                     </div>
                 </div>
                 <div class="row mb-5">
